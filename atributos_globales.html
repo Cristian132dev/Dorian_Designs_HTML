@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atributos globales xD</title>
+</head>
+
+<style>
+   .parrafo {
+      color: red;
+   }
+</style>
+
+<body>
+   <p class="parrafo">clases</p>
+   <p id="parrafo">identificador</p>
+   <p title="este es un ejemplo del atributo title">titulo con tooltip</p>
+   <p id="parrafo_2" data-ejemplo="datos de ejemplo">datos pasados en la etiqueta</p>
+</body>
+
+<script>
+   const p = document.getElementById("parrafo");
+   const parrafo_2 = document.getElementById("parrafo_2");
+
+   console.log(parrafo_2.dataset.ejemplo)
+</script>
+
+</html>

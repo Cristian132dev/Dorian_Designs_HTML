@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tablas en HTML</title>
+
+   <style>
+      col{
+         background-color: steelblue;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Tabla</h1>
+   <table>
+      <!-- Titulo de la tabla -->
+      <caption>Horario de Clases</caption>
+      <colgroup>
+         <col span="2"> <!-- abarca y selecciona el numero de columnas que le digamos -->
+         <col> <!-- Selecciona las columnas -->
+      </colgroup>
+
+      <!-- Head de la tabla -->
+      <thead>
+         <tr>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>M</th>
+            <th>J</th>
+            <th>V</th>
+         </tr>
+      </thead>
+
+      <!-- Body de la tabla -->
+      <tbody>
+         <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matemáticas</td>
+            <td>Matemáticas</td>
+            <td>Sociales</td>
+            <td>Matemáticas</td>
+            <td>Matemáticas</td>
+         </tr>
+         <tr>
+            <td>9:30 - 10:25</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Sociales</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+         </tr>
+         <tr>
+            <td>10:25 - 11:20</td>
+            <td>Educación Física</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Educación Física</td>
+         </tr>
+         <tr>
+            <td>11:20 - 11:45</td>
+            <td colspan="5">Recreo</td> <!-- Colspan permite que una celda ocupe mas de una columna -->
+         </tr>
+         <tr>
+            <td>11:45 - 12:40</td>
+            <td>Ingles</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>Tutoría</td>
+            <td>Ingles</td>
+         </tr>
+         <tr>
+            <td>12:40 - 13:35</td>
+            <td rowspan="2">Tecnología</td> <!-- Rowspan permite que una celda ocupe mas de una fila -->
+            <td>Educación Física</td>
+            <td>Plástica</td>
+            <td>Religion</td>
+            <td rowspan="2">Tecnología</td> <!-- Rowspan permite que una celda ocupe mas de una fila -->
+         </tr>
+         <tr>
+            <!-- al darle mas espacio a otras celdas, normalmente es como si quitáramos el espacio de otra, entonces debemos eliminar celdas de otras filas posteriores -->
+            <td>13:35 - 14:30</td>
+            <td>Frances</td>
+            <td>Tecnología</td>
+            <td>Frances</td>
+         </tr>
+      </tbody>
+
+      <!-- Pie de pag de la tabla -->
+      <tfoot>
+         <tr>
+            <td>Total de asignaturas</td>
+            <td colspan="5">12</td> <!-- Colspan permite que una celda ocupe mas de una columna -->
+         </tr>
+      </tfoot>
+   </table>
+</body>
+
+</html>

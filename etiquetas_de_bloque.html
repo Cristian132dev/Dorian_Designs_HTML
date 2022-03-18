@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Etiquetas de bloque</title>
+</head>
+
+<body>
+   <!-- usar esto para mostrar direcciones físicas -->
+   <address>
+      Tony Stark
+      Malibu 10880
+      90265
+      California
+   </address>
+
+   <!-- se usa para marcar citas de otros autores, se le puede agregar el atributo cite que sirve para poner el link de donde hemos sacado el contenido, aunque solo sirve a nivel navegador ya que visualmente este no hace nada (tipo bloque) -->
+   <blockquote
+      cite="https://www.elespectador.com/opinion/columnistas/fidel-cano/se-nos-colo-ivan-duque-en-una-galeria-de-fotos-de-candidatos-votando/">
+      <p>
+         Esta semana fueron pocos los #JalonesDeOrejas. Hubo un desliz en el tema electoral que pillaron algunos. En una
+         galería de fotos del domingo en la mañana, donde registrábamos el voto de los candidatos y precandidatos (así
+         decía el titular), se nos colaron dos que no pertenecían a ese grupo: el presidente Iván Duque y el registrador
+         Alexander Vega.
+      </p>
+   </blockquote>
+
+   <!-- Contenido preformateado que se representa en el contenido igual como se escribió -->
+   <pre>
+      hola,
+      que tal?
+   </pre>
+
+   <!-- se usa como division del documento, semanticamente no significa nada, pero se usa como contenedor para dar estilos o para dar delegacion de eventos en javascript -->
+   <div>
+      <h2>Nombre</h2>
+      <p>email</p>
+      <p>description</p>
+   </div>
+
+   <!-- Sirve para darle a entender al navegador que cambiamos de tema, no para hacer lineas en el documento (aunque las haga ) -->
+   <hr>
+</body>
+
+</html>
