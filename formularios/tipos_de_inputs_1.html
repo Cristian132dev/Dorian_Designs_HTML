@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <form>
+      <!-- input button no enviá formulario, se usa mas en javascript -->
+      <input type="button" value="Enviar"> <!-- para asignarle un texto al botón lo ponemos con el atributo value -->
+      <button>enviar</button> <!-- enviá formulario -->
+      <input type="submit" value="Enviar"> <!-- enviá formulario -->
+
+      <input type="date"> <!-- sirve para elegir dia/mes/año -->
+      <input type="datetime"> <!--! OBSOLETO, pone un espacio de texto, NO USAR -->
+      <input type="month"> <!-- sirve para elegir un mes -->
+      <input type="week"> <!-- sirve para elegir una semana de un mes -->
+      <input type="datetime-local"> <!-- sirve para elegir dia/mes/año y hora -->
+      <!--! NO FUNCIONA EN FIREFOX -->
+      <!--! si se quiere usar fecha y hora, se debe usar asi para que no halla problema con Firefox  -->
+      <div>
+         <input type="date">
+         <input type="time"> <!-- sirve para elegir la hora -->
+      </div>
+   </form>
+</body>
+
+</html>

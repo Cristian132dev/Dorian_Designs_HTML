@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipos de Inputs 4</title>
+</head>
+
+<body>
+   <form>
+      <!-- nos permite seleccionar una unica opción de una lista, la relación se da con el mismo valor del atributo name en las opciones-->
+      <!-- un atributo booleano es checked, hará que el elemento que lo tenga aparezca chequeado de manera predeterminada -->
+      <!-- un atributo "obligatorio" es value que enviá con el formulario la categoría y el valor que eligió el usuario -->
+      <h2>Genero</h2>
+      <div>
+         <label for="man">Masculino</label>
+         <input type="radio" id="man" name="gender" value="masculino"> <!-- el servidor recibe (gender: masculino) -->
+
+         <label for="woman">Femenino</label>
+         <input type="radio" id="woman" name="gender" value="femenino">
+
+         <label for="unknown">Desconocido</label>
+         <input type="radio" id="unknown" name="gender" value="desconocido">
+      </div>
+
+      <!-- permite seleccionar varias opciones de una lista -->
+      <!-- un atributo booleano es checked, hará que el elemento que lo tenga aparezca chequeado de manera predeterminada -->
+      <div>
+         <h2>Lenguajes Que Conoces</h2>
+         <label>
+            <input type="checkbox" name="languages" value="html">
+            HTML
+         </label>
+         <label>
+            <input type="checkbox" name="languages" value="css">
+            CSS
+         </label>
+         <label>
+            <input type="checkbox" name="languages" value="javascript">
+            JavaScript
+         </label>
+      </div>
+
+      <!-- Crea una lista de opciones donde podemos seleccionar una o varias opciones -->
+      <!-- si se agrega el atributo "multiple" a el elemento select y presionando "ctrl" podemos elegir mas de una opción -->
+      <div>
+         <h2>Elementos Seleccionables</h2>
+         <select name="lenguajes">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+         </select>
+      </div>
+
+      <!-- Si tenemos muchas opciones podemos ordenarlas por categorías con la etiqueta <optgroup> y con el atributo label -->
+      <div>
+         <h2>Mascotas</h2>
+         <select name="mascotas">
+            <optgroup label="4 patas">
+               <option value="perro">Perro</option>
+               <option value="gato">Gato</option>
+               <option value="hamster">Hamster</option>
+               <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="Aves">
+               <option value="loro">Loro</option>
+               <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="Otras">
+               <option value="serpiente">Serpiente</option>
+               <option value="tarantula">Tarantula</option>
+            </optgroup>
+         </select>
+      </div>
+
+      <!-- los input tipo list tienen la particularidad de tener un filtro integrado -->
+      <div>
+         <input type="list" list="mascotas"> <!-- en list se pone a que va a apuntar la lista -->
+         <datalist id="mascotas"> <!-- nombre de la lista -->
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+            <!-- se pone option como en select, el value ademas de ir al server también nos sirve de titulo, y el contenido podemos dejarlo vacío o poner una descripción -->
+         </datalist>
+      </div>
+   </form>
+</body>
+
+</html>
