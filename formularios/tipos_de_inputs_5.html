@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipos de Input 5</title>
+</head>
+
+<body>
+   <form>
+      <fieldset>
+         <!-- se utiliza para agrupar elementos dentro de un formulario -->
+         <legend>Datos Personales</legend> <!-- Agrega un titulo al fieldset -->
+         <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname">
+         </div>
+      </fieldset>
+
+      <!-- sirve para cargar archivos para enviarlos junto el formulario, con javascript se le puede implementar mas cosas -->
+      <input type="file">
+
+      <!--!METER Y PROGRESS no son muy utilizadas ya que hay otras maneras de hacerlo, pero no esta de mas saberlo  -->
+      <!-- representa un valor dentro de un rango conocido -->
+      <div>
+         <label for="fuel">Combustible</label>
+         <meter id="fuel" min="0" max="100" low="20" high="80" optimum="50" value="10">
+            <!-- min: valor mínimo, max: valor máximo, value: valor actual de la barra
+            low: valor limite inferior, high: valor limite máximo, optimum: valor optimo.-->
+      </div>
+
+      <!-- representa el progreso de una tarea, los atributos son iguales a los de meter -->
+      <label for="task">tarea 1</label>
+      <progress id="task" max="100" value="15"></progress>
+
+      <!-- se utiliza para introducir texto en un formulario -->
+      <div>
+         <!-- su tamaño se puede configurar desde aquí pero ya sabemos donde es mejor -->
+         <textarea cols="30" rows="10"></textarea>
+      </div>
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>atributos de los formularios</title>
+</head>
+
+<body>
+   <!--
+   placeholder: da pistas de que se debe poner en el campo
+   required: convierte en obligatorio un campo, es una medida de seguridad muy básica
+   readonly: convierte un campo en solo lectura, igual se envía en el formulario el contenido
+   disabled: se apaga el campo y no se envía la info en el formulario
+   min - max: mínimo y máximo de un campo numérico
+   minlength - maxlength: mínimo y máximo numero de caracteres
+   selected: equivale a checked en los select, sirve para establecer una opción por defecto
+   autofocus: nos pone el foco en el campo de texto automáticamente sin darle click
+   autocomplete: define si el formulario debería tener autocompletado por parte del navegador
+   novalidate: no valida el formulario, solo para form
+   multiple: permite subir mas de un archivo al input file
+   -->
+   <form >
+      <label for="name">Nombre</label>
+      <input type="text" id="name" placeholder="Nombre Completo" autofocus autocomplete="off">
+      <input type="text" value="Hi Five!!" disabled>
+      <br>
+      <input type="number" placeholder="cuantos panes quieres">
+      <input type="password" required minlength="8">
+      <input type="email" >
+      <button>Enviar Formulario</button>
+   </form>
+</body>
+
+</html>
