@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Device Pixel Ratio</title>
+</head>
+
+<body>
+   <h1>Device Pixel Ratio</h1>
+   <!-- es la relación que existe entre los pixels reales que tiene el dispositivo y los pixels que tenemos disponibles para pintar contenido -->
+
+   <!-- el img srcset me falla, no se porque -->
+   <img srcset="
+   /contenido_embebido/assets/image/900x500.jpg,
+   /contenido_embebido/assets/image/300x150.jpg 2x" alt="Imagen de portada no soportada">
+
+   <!-- picture no funciona sin el img, porque necesita un archivo de seguridad. -->
+   <picture>
+      <source media="(max-width: 500px)" srcset="/contenido_embebido/assets/image/150x75.jpg">
+      <source media="(max-width: 1000px)" srcset="/contenido_embebido/assets/image/300x150.jpg">
+      <!-- media cargara una imagen cuanto la pag salga del rango, en este caso 1000px, cuando se supere el umbral, cargara la imagen de img src-->
+
+      <img src="/contenido_embebido/assets/image/900x500.jpg" alt="Contenido Corrupto">
+   </picture>
+</body>
+
+</html>
